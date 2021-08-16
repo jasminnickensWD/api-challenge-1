@@ -1,11 +1,32 @@
 .body{
+    font-family: sans-serif;
+    
+
+}
+.wrapper{
     margin: 0 auto;
-    padding: 0 auto;
-}
-
-.container{
-    display: flex;
+    display:flex;
     flex-direction: column;
+    justify-content: center;
     align-content: center;
+    background: url("./assets/poke-background.jpg");
+    
 }
 
+h2 {
+    text-align: center;
+    background-color: khaki;
+    border: 3px inset orange;
+    border-radius: 5px;
+}
+
+p{
+    text-align: center;
+    background-color: khaki;
+    border: orange 5px inset;
+    border-radius: 5px;
+}
+
+.catchBtn{
+    background-color: orange;
+}

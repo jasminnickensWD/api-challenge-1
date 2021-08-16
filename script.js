@@ -1,27 +1,15 @@
+let randomPokeImg = document.querySelector('.randomPokeImg');
+console.log("RandomPokeImage:", randomPokeImg);
+const baseURL = 'https://pokeapi.co/api/v2/pokeathlon-stat/{id or name}/'
+const catchBtn = document.querySelector('.catchBtn')
 
-/*const baseUrl = 'https://pokeapi.co/api/v2/pokemon/';
+catchBtn.addEventListener('click', getPokemon)
 
-function fetchPokemons(){
+const getPokemon = () => {
     fetch(baseURL)
-     .then(response => response.json())
-     .then(function(allpokemon){
-     allpokemon.results.forEach(function(pokemon){
-       fetchPokemons(pokemon); 
-     })
-    })
-    return console.log(fetchPokemons())
-   }
 
-console.log(fetchPokemons());*/
-function getPokemon(){
-    fetch('https://pokeapi.co/api/v2/pokemon/5')
-    .then(response){
-        rsponse.json()
-       // console.log(response.json());
-    }
-    .then(function (pokemon)){
-        console.log(pokemon.name)
-    }
-    }
-    
-    getPokemon();
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+    })
+}
